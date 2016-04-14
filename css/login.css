@@ -1,0 +1,10 @@
+.full.height.image {
+  background-image: url("http://fusterapartments.com/blog/wp-content/uploads/2015/07/Fuente-M%C3%A1gica-de-Montju%C3%AFc.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  width: 100%;
+}
