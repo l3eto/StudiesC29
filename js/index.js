@@ -1,9 +1,33 @@
+var colorHex = [
+  '#7EC8D1',
+  '#6BCFC7',
+  '#E9BCBF',
+  '#A8C7D8',
+  '#A7ECBB',
+  '#9AC09B',
+  '#ADEDF8',
+  '#9AC09B',
+  '#ADEDF8',
+  '#9AC09B',
+  '#A8C7D8',
+  '#D0E497',
+  '#A7ECBB'
+];
+
+
 $(document).ready(function() {
 
     if( !sessionStorage.getItem("randomColor") ) sessionStorage.setItem("randomColor", ( 1 + Math.floor(Math.random() * (13 ))).toString() );
 
     $('.masthead').addClass( 'bg' +  sessionStorage.getItem("randomColor") );
 
+    //update colors of bar phone
+    $('meta[name=theme-color]').remove();
+    $('head').append( '<meta name="theme-color" content="'+colorHex[sessionStorage.getItem("randomColor")]+'">' );
+    $('meta[name=msapplication-navbutton-color]').remove();
+    $('head').append( '<meta name="msapplication-navbutton-color" content="'+colorHex[sessionStorage.getItem("randomColor")]+'">' );
+    $('meta[name=apple-mobile-web-app-status-bar-style]').remove();
+    $('head').append( '<meta name="apple-mobile-web-app-status-bar-style" content="'+colorHex[sessionStorage.getItem("randomColor")]+'">' );
 
     //for buttons
     $('.ui.button.primary').css('background-image','url("images/backgrounds/'+sessionStorage.getItem("randomColor")+'.jpg")');
