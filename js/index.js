@@ -16,7 +16,7 @@ var colorHex = [
 
 
 $(document).ready(function() {
-
+  
     if( !sessionStorage.getItem("randomColor") ) sessionStorage.setItem("randomColor", ( 1 + Math.floor(Math.random() * (13 ))).toString() );
 
     $('.masthead').addClass( 'bg' +  sessionStorage.getItem("randomColor") );

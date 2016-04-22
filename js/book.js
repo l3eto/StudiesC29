@@ -7,7 +7,7 @@ $(document).ready(function() {
     window.location = '../';
   });
   //for buttons
-  $('.ui.button.primary').css('background-image','url("../images/backgrounds/'+sessionStorage.getItem("randomColor")+'.jpg")');
+  $('.ui.button.primary').css('background-image','url("../../images/backgrounds/'+sessionStorage.getItem("randomColor")+'.jpg")');
   $('.ui.button.primary').css('background-position','0px');
 
   $('.ui.button.primary').hover(function(){
