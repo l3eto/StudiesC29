@@ -5,3 +5,7 @@
 #mainPage .masthead .container {
   padding: 0rem 0em;
 }
+
+.ui.vertical.stripe.intro.segment{
+  padding: 2em 0px;
+}
